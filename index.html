@@ -1,1 +1,210 @@
-My Page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+
+    </script>
+    <script src="main.js" type="text/javascript"></script>
+    <title>Simple Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class=" custom custom-background">
+<header class="header">
+    <div class="navbar fixed">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img  src="logos.png" alt="logo">
+            </div>
+            <div class="nav-menu">
+                <ul id="smooth" >
+                    <a class="smoothScroll" href="#focus"><li class="about nav-text dark-hover">Обо мне</li></a>
+                    <a class="smoothScroll" href="#zapis"><li class="zapis nav-text dark-hover">Записаться</li></a>
+                    <a class="contacts-href"><li class="contacts nav-text dark-hover">Контакты
+                        <ul class="sub-menu">
+                            <li>Тел.: 8-930-112-90-57</li>
+                            <li>email: www.natalia9090@mail.ru</li>
+                        </ul>
+                    </li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="top" class="header-content">
+        <!--<span><b>Английский это просто! </b> </span>-->
+        <img class="appear" style="width: 70%;" src="simple.png" alt="English is simple!">
+    </div>
+</header>
+<div class="main-content">
+    <div id="focus" class="focus">
+        <div class="focus-container">
+            <div class="h hideme">
+                <span> Сделайте шаг и узнайте как выучить английский
+                всего за пару недель.
+                </span>
+            </div>
+            <div class="about">
+                <div class="photo">
+                    <img src="nata.png" alt="It's me!">
+                </div>
+                <div class="about-text hideme">
+                    <h1> Наталия Фролова</h1>
+                    <p> Филолог-лингвист,  художник,
+                        автор книг по педагогике,
+                        преподаватель, заслуженный учитель.
+                        Автор обучающей методики «Английский в массы».
+                        Пропагандист плюрализма и просветительства. </p>
+                </div>
+            </div>
+            <div class="h">
+                <span> Используя методику <strong>Наталии</strong>
+                    всего за <strong>2</strong> месяца вы будете:
+                </span>
+            </div>
+            <div class="prons hideme">
+                <div class="speak">
+                    <ul>
+                        <li class="icon">
+                            <img style="vertical-align: middle" src="speak.png" alt="let's speak">
+                        </li>
+                        <div style="position: relative;"><li class = "speak-text red-border-bottom">
+                            Говорить на английском
+                        </li></div>
+                        <li class="speak-text-exploration">
+                            Вы будете обладать твердыми навыками
+                            разговорной речи на уровне <strong>intermediate</strong>,
+                            забудете про всякие разговорники при поездке
+                            за границу.
+                        </li>
+                    </ul>
+                </div>
+                <div class="write">
+                    <ul>
+                        <li class="icon green-border">
+                            <img style="vertical-align: middle" src="read.png" alt="let's speak">
+                        </li>
+                        <div style="position: relative;"><li class = "speak-text red-border-bottom green-background">
+                            Читать и писать на английском
+                        </li></div>
+                        <li class="speak-text-exploration">
+                            Тепереь чтение литературы в оригинале
+                            не будет для вас проблемой, вся английская
+                            классика заиграет новыми цветами, и вас уже будет
+                            сложно вытащить с зарубежных форумов.
+                        </li>
+                    </ul>
+                </div>
+                <div class="listen">
+                    <ul>
+                        <li class="icon blue-border">
+                            <img style="vertical-align: middle" src="listen.png" alt="let's speak">
+                        </li>
+                        <div style="position: relative;"><li class = "speak-text red-border-bottom blue-background">
+                            Слушать на английском
+                        </li></div>
+                        <li class="speak-text-exploration">
+                            Музыкальные хиты современности все еще
+                            кажутся несвязным потоком ерунды?
+                            Мы исправим это и вам больше не нужно искать
+                            фильмы и сериалы на русском!
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="zapis" class="bye-a-course">
+        <div class="zapis-text hideme">
+            Записаться на курс только сегодня можно по специальной
+            сниженной цене, всего за <strong>6500р.</strong> вы
+            забудете про языковой барьер и откроете для себя
+            удивительный мир английского языка!
+        </div>
+        <div class="button"><a href="#top">Записаться</a></div>
+    </div>
+    <div class="feedback">
+        <span class="feedback-main-text">Отзывы</span>
+        <div class="people">
+            <div class="people-about">
+                <img class="people-about-photo" src="ljba.png" alt="lybov">
+                <div><strong><i>Любовь Блохина</i></strong> <br>
+                    vk.com/id208713612</div>
+            </div>
+            <div class="people-text hideme"><h3><strong>«Занятия с Наталией очень эффективны»</strong></h3>
+                «До этого я изучала язык с другим преподавателем, но результатов особых не было.
+                Я не могла общаться на английском.
+                Наталия дает упражнения, которые реально заставляют вас разговаривать на английском языке.
+                Сейчас я общаюсь с носителями английского, и они говорят, что у меня хороший уровень .
+                Я очень довольна»
+            </div>
+        </div>
+        <div class="people">
+            <div class="people-about">
+                <img class="people-about-photo" src="ivan.png" alt="ivan">
+                <div><strong><i>Иван Плаксин</i></strong> <br>
+                    vk.com/schrdngrsctslv</div>
+            </div>
+            <div class="people-text hideme"><h3><strong>«Прогресс налицо»</strong></h3>
+                «Занятия с Наталией очень нравятся.
+                Прогресс налицо, работаю с иностранными заказчиками,
+                поэтому английский просто необходим.
+                Наталия хорошо понимает сильные и слабые стороны
+                при обучении, весьма доходчиво объясняет материал,
+                прекрасно распределяет время во время занятий»
+
+            </div>
+        </div>
+        <div class="people">
+            <div class="people-about">
+                <img class="people-about-photo" src="dima.png" alt="dima">
+                <div><strong><i>Дмитрий Елисеев</i></strong> <br>
+                    vk.com/skiopod</div>
+            </div>
+            <div class="people-text hideme"><h3><strong>«Результат превзошел все ожидания»</strong></h3>
+                «Выражаю благодарность Наталии за отлично проведенную консультацию.
+                Долго не мог преодолеть порог понимания на слух,
+                а тут за пару минут объяснил, да так доходчиво,
+                что вопросов больше не было.
+                Сразу применил и результат превзошел все ожидания!
+                Это оказалось так просто! Рекомендую обратиться за
+                английским только к Наталии»
+            </div>
+        </div>
+    </div>
+    <div class="footer"> Данный сайт является шуткой, вся информация выдумана, все персонажи вымышлены, любое совпадение - случайность</div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        /* Every time the window is scrolled ... */
+        $(window).scroll( function(){
+            /* Check the location of each desired element */
+            $('.hideme').each( function(i){
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                /* If the object is completely visible in the window, fade it it */
+                if( bottom_of_window > bottom_of_object ){
+                    $(this).animate({'opacity':'1'},500);
+                }
+            });
+        });
+    });
+    $(".appear").fadeIn(1000);
+</script>
+</body>
+</html>
